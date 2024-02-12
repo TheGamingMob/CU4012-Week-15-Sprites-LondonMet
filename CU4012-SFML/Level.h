@@ -6,6 +6,8 @@
 #include "Framework/GameObject.h"
 #include <string.h>
 #include <iostream>
+#include "Player.h"
+#include "Enemy.h"
 
 
 class Level : BaseLevel {
@@ -22,4 +24,11 @@ private:
 	GameObject testSprite;
 	sf::Texture texture;
 
+	Player playerSprite;
+	sf::Texture PlayerTex;
+
+	Enemy e1, e2;
+	sf::Texture e1Tex, e2Tex;
+
+	sf::Vector2f move, move1;
 };
